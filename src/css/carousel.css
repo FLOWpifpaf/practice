@@ -1,0 +1,134 @@
+.btn__box
+{
+    width: 118px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__button
+{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background-color: #00ffff;
+}
+
+.slider__button:hover
+{
+    background-color: #00ffffce;
+}
+
+.slider
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.slider__main
+{
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.cards
+{
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+
+}
+
+.card
+{
+    padding: 0 0.9%;
+    min-width: 100%;
+}
+
+.card:nth-child(1)
+{
+    padding-left: 0;
+}
+
+.card__text
+{
+    color: rgb(91, 87, 87);
+}
+
+@media screen and (min-width: 768px)
+{
+    .slider__main
+    {
+        width: 85.5%;
+    }
+
+    .card
+    {
+        min-width: 49.1%;
+    }
+
+    .slider__button
+    {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+
+    .slider__button
+    {
+        margin-top: 57%;
+    }
+
+    .slider__button_left
+    {
+        background: url(../img/arrow_left.png) 45% center no-repeat #00ffff;
+    }
+    
+    .slider__button_right
+    {
+        background: url(../img/arrow_right.png) 55% center no-repeat #00ffff;;
+    }
+
+    .card__image
+    {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .card
+    {
+        min-width: 32.1%;
+    }
+}
+
+@media screen and (min-width: 1366px)
+{
+    .slider
+    {
+        max-width: 1450px;
+    }
+
+    .slider__main
+    {
+        width: 82.7%;
+    }
+
+    .card
+    {
+        min-width: 23.65%;
+    }
+
+    .slider__button_left
+    {
+        margin-right: 28px;
+    }
+    
+    .slider__button_right
+    {
+        margin-left: 28px;
+    }
+}
